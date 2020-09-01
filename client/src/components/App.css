@@ -1,0 +1,88 @@
+.App {
+  text-align: left;
+  color: white;
+}
+
+body {
+  background-color: rgb(20,20,20);
+}
+
+.form1 {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.float-container {
+  position: relative;
+}
+
+label.active-field {
+  display: block;
+  margin-top: -15px;
+  margin-left: 5px;
+  position: absolute;
+  font-size: 11px;
+  transition: all .15s ease-in;
+  color: rgb(104, 154, 247);
+  margin-left: 42.5%;
+}
+
+label.inactive-field {
+  display: block;
+  color: rgb(177, 177, 177);
+  position: absolute;
+  text-align: left;
+  transition: all .15s ease-in;
+  padding-top: 2px;
+  font-size: 20px;
+  margin-left: 42.5%;
+}
+
+label.inactive-field-alert {
+  display: block;
+  color: rgb(240, 87, 87);
+  position: absolute;
+  text-align: left;
+  transition: all .15s ease-in;
+  padding-top: 2px;
+  font-size: 20px;
+  margin-left: 42.5%;
+}
+
+.floating-label-box1 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid blue;
+  background-color: rgb(20,20,20);
+  color: white;
+  text-align: left;
+  margin-left: 42%;
+  width: 16%;
+  min-width: 120px;
+ }
+
+.center-align {
+  text-align: center;
+}
+
+.submit-button {
+  text-align: center;
+  margin-left: 46%;
+  width: 8%;
+  min-width: 70px;
+  background-color: blue;
+  color: rgb(200, 200, 200);
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+}
