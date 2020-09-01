@@ -30,7 +30,6 @@ class InputBox extends React.Component
 
     deactivateField(event)
     {
-        console.log(event);
         if(event.target.value.length === 0)
             this.setState( { fieldIsActive: false } );
     }
@@ -42,7 +41,7 @@ class InputBox extends React.Component
 
     determineClassName()
     {
-        console.log("determining");
+        console.log("determining " + this.id);
         if(this.state.fieldIsActive) return "active-field";
 
         var label = document.getElementById(this.id+"-label");
