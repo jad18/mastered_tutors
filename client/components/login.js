@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import InputBox from './InputBox';
 
+alert("Here");
+
 class LoginPage extends React.Component
 {
     constructor()
@@ -65,6 +67,10 @@ class LoginPage extends React.Component
                 document.getElementById("password-label").className="inactive-field-alert";
                 this.passwordContainer.current.setState({ fieldIsActive: false });
             }
+        }
+        else
+        {
+            this.setState({ wrongPassword: false });
         }
     }
 
